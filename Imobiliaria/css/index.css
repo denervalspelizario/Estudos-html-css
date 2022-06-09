@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    
+}
+div{
+
+    text-align: center;
+    font-family: tahoma;
+    
+}
+
+.nav{
+    background-color: #b0ddfc;
+    padding: 0px;
+    
+
+}
+
+.nav img{
+    width: 150px;
+}
+
+.nav p{
+    padding-bottom: 60px;
+    
+}
+.nav a{
+    font-size: 18px;
+    color: black;
+    
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.banner img{
+    width: 1850px;
+    padding: 50px 25px ;
+}
+
+.realstate h1{
+    font-size: 40px;
+}
+
+.realstate h2{
+    color: #1d80c1;
+    font-weight: lighter;
+    line-height: 5px;
+    font-size: 30px;
+}
+
+.realstate img{
+    width: 550px;
+}
+
+.realstate p{
+    width: 900px;
+    margin: 20px auto;
+    
+    text-align: justify;
+}
+
+.realstate span{
+    font-weight: bold;
+    color: #1d80c1;
+}
+
+.Service{
+    background-color: #1d80c1;
+    color: white;
+}
+.Service h3{
+    font-size: 25px;
+    padding-top: 40px;
+
+}
+
+.Service p{
+    width: 650px;
+    margin: 20px auto;
+    line-height: 35px; 
+    font-size: 20px;
+}
+
+.Service span{
+    font-weight: bold;
+    color: yellow;
+}
+
+.Service ul{
+    font-size: 20px;
+    line-height:  40px;
+    text-align: left;
+    width: 250px;
+    margin: 20px auto;
+    padding-left: 200px;
+    padding-bottom: 30px;
+    
+}
+
+.broker h3{
+    font-size: 25px;
+    color: #1d80c1;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.broker img{
+    width: 550px;
+    padding-bottom: 20px;
+}
+
+.broker p{
+    width: 870px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 20px;
+
+}
+
+.broker span{
+    font-weight: bold;
+    color: #1d80c1;
+}
+
+.Contact{
+    background-color: #1d80c1;
+    color: white;
+}
+
+.Contact h3{
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.Contact p{
+    background-color: black;
+    width: 900px;
+    margin: 20px auto;
+    padding: 10px 5px ;
+}
+
+.Contact span{
+    background-color: black;
+    font-weight: bold;
+    color: yellow;
+}
+
+.Contact .links{
+    
+    width: 200px;
+    margin: 20px auto 0px auto;
+}
+.Contact ul{
+    list-style-type: none;
+    width: 250px;
+    margin: 20px auto;
+    
+}
+
+.Contact  a{
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: white;
+    color: #1d80c1;
+    line-height: 35px;
+}
