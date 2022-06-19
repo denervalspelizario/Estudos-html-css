@@ -1,0 +1,80 @@
+
+.secao-quartos-sol {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(75, 75, 75); 
+}
+
+.secao-quartos-sol .sol-texto h2 {
+    
+    font-size: 38px;
+    font-weight: normal; 
+
+}
+
+.secao-quartos-sol .sol-texto p {
+   
+  font-size: 20px;
+  font-weight: 350;
+  padding-bottom: 20px;        
+
+}
+
+
+.secao-quartos-sol .solteiro-img  {
+ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  
+}
+
+.secao-quartos-sol .solteiro-img img {
+  width: 400px;
+  height: 250px;
+  padding: 0 20px; 
+
+
+}
+
+
+.solteiro-info h3{
+  padding-top: 50px;
+  font-size: 20px;
+  
+}
+
+.solteiro-info li {
+  font-weight: 350;
+   
+}
+
+.solteiro-info .solteiro-lista {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+.solteiro-info .solteiro-lista  .lista1 {
+
+  display: flex;
+  
+
+}
+
+.solteiro-info .solteiro-lista  .lista2 {
+
+  display: flex;
+
+}
+
+.solteiro-info .solteiro-lista   div {
+
+  padding-right: 80px;
+  margin-bottom: 50px;
+
+}
+

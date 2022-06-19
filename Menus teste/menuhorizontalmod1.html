@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Menu CSS</title>
+<style>
+    * {
+       margin: 0 auto;      /* esse margin e o padding centralizam a pagina, estao qualquer elemento que nao estiver w100% ficara no centro*/
+       padding: 0;
+       box-sizing: border-box;     
+       
+       
+    
+
+     }
+
+     #menu-h   {
+         background-color: rgb(37, 37, 39);
+          
+
+     }
+
+    #menu-h ul{
+
+         max-width: 1024px ;   /*Esse max-w limita o tamanho do menu e como esta centralizado eles ficam no espaço do meio*/               
+         list-style: none;
+         padding: 0;
+         background-color: rgb(37, 37, 39);
+         font-family: 'Open Sans', sans-serif; 
+    }  
+
+    #menu-h ul li{
+         
+        display: inline;
+
+    }
+
+    #menu-h ul li a {
+      
+         text-decoration: none;
+         display: inline-block; 
+         color: white;
+         padding: 20px;
+         transition: background .4s;   /* transition colocara delay na funçao hover no caso na alteraçao de fundo pelo background de 0.4s*/
+
+    } 
+    
+    #menu-h ul li a:hover {    /* função :hover modificara o elemento quando passar o mouse, no caso ficará na cor do background especificado abaixo*/
+          
+         
+         background-color: rgb(24, 139, 233);  
+        
+
+    }
+
+
+    #menu-h ul li:last-child a{
+
+        float: right;
+        background-color: rgb(24, 139, 233);
+        
+    }
+    
+
+
+</style>
+</head>
+<body>
+
+    <nav id="menu-h">
+        <ul>
+            <li>
+               <a href="#">Home</a> 
+            </li>
+            <li>
+               <a href="#">Contato</a>
+            </li>
+            <li>
+               <a href="#">Quem Somos</a> 
+            </li>
+            <li>
+               <a href="#">Contato</a>
+            </li>
+            <li>
+               <a href="#">Entrar</a>
+            </li>
+         </ul>
+     
+    </nav>
+
+   
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Menu DropDown</title>
+    <style>
+    *{
+       margin: 0 auto;
+       padding: 0;
+
+
+    }   
+    :root {
+
+        --cor-fundo: rgb(34, 41, 34);      /* Essas variaves (dentro da root) são para simplificar as mudanças de cor*/
+        --cor-hover: rgb(118, 180, 145);
+        --cor-primaria: rgb(231, 241, 236);
+    }
+
+    /*Construindo o Menu*/
+
+    .dp-menu ul {                    /*segue instruções  1 - retirar qualquer tipo da lista 2 - tirar espaço interno por enquanto  3 - cor fundo usando uma variavel(root)*/
+
+        list-style-type: none;                    
+        padding: 0;   
+        background-color: var(--cor-fundo);   
+        position: relative;
+    }
+
+    .dp-menu ul li {                      /*segue instruções  1 - colocando lateralmente elemento li*/
+          
+        display: inline-block
+
+    }
+
+    .dp-menu ul li a {   /* 1 - cor do texto usando variavel 2 - retirando sublinhado 3 - colocando espaço em todos os lados 10px 4 - colocará lado a lado podendo espaçar lados e altura*/
+
+        color: var(--cor-primaria); 
+        text-decoration: none;
+        padding: 10px; 
+        display: inline-block;
+        transition: background .4s;   /* transition colocara delay na funçao hover no caso na alteraçao de fundo pelo background de 0.4s*/
+    }
+    
+    .dp-menu ul li a:hover {       /* função :hover modificara o elemento quando passar o mouse, no caso ficará na cor do background especificado abaixo no caso a var*/
+
+        background-color: var(--cor-hover);
+    }
+
+    /*Construindo o Sub-Menu*/
+    
+
+
+    .dp-menu ul ul {   /*Mudar a ul dentro da ul com 1 - ocultando elemento pelo display none 2 - manter posiçao sobre elemento pai no caso primeiro ul*/
+        display: none;
+        position: absolute;
+        
+
+
+    }
+
+    .dp-menu ul li:hover ul {   /*Quando passar o mouse em uma li que estiver um "ul" dentro o display mudará de none para block*/
+        display: block;
+        
+
+    }
+    
+    .dp-menu ul ul {  /*Definindo tamanho da ul interna espremendo ela para que cresça para baixo, se aumentar ul cresce para lateral*/
+        width: 100px;
+       
+
+    }
+
+
+    .dp-menu ul ul li a {   /*Manter o link da li em blocos*/
+
+        display: inline-block;
+    }
+
+
+    </style>
+</head>                                      
+<body>
+    <nav class="dp-menu">        <! -- Menu sempre fica dentro da tag nav, ok!? -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produtos</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Notícias</a></li>
+                </ul>  
+            </li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Quem Somos</a></li>            
+        </ul>   
+    </nav>
+</body>
+</html>
