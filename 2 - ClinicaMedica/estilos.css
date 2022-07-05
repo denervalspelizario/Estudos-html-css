@@ -1,0 +1,266 @@
+* {
+    margin: 0 auto;                /*retirando as margem de cima a baixo e centralizando os elementos*/
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #7f8081;
+}
+/* Ajuste da secao topo*/
+.secao-topo {                         /*Criando o fundo do topo e colocando um em cada lado atravez do flex box*/
+    background-color: #00cad1;
+    display: flex;
+    justify-content: space-between;
+}
+.secao-topo figure a img {   /*Ajustando a imagem do topo*/
+    width: 120px;
+}
+.secao-topo nav {
+    padding-top: 20px;    /* Espaçamento para colocar na mesma linha que a left*/
+}
+.secao-topo nav a{            /*Estilização das tags da nav*/
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.secao-topo nav a:hover {
+    color: #0c6e71;
+}
+/*Inicio da estilizaçao da section 1 */
+.secao-one {
+    background-image: url("assets/recepcao.png");   /* fundo com imagem, e estilizaçao da mesma*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+.secao-one .secao-one-texto {
+    padding-top: 260px;
+}
+.secao-one .secao-one-texto h2{        /* Uma container com fundo e dentro outra container com limitaçao de area para posicionar o texto*/
+       font-size: 35px;
+       color: white;
+       font-weight: 400;
+       width: 60%;
+}
+/*Inicio da segunda section secao-sobre*/
+.secao-sobre {             
+    margin: 0 auto ;        /* Centralizando a container  e estabelecendo tamanho maximo de espaço*/
+    padding: 30px 0 ;
+    width: 600px;
+}
+.secao-sobre .secao-sobre1 {
+    color: #7f8081;
+    text-align: center;
+}
+.secao-sobre .secao-sobre1 h2 {        /*Estilizando subtitulo e parágrafo*/
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    font-weight: 700;                   
+}
+.secao-sobre .secao-sobre1 p {
+    font-size: 15px;
+    text-align: center; 
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.secao-sobre .secao-sobre2 {          /*Ajustando os dois containers lado a lado para a lista ficar a esquerda e a imagem a direita*/
+    display: flex;
+}
+.secao-sobre .secao-sobre2 .sobre2-right h2 {
+    font-weight: 300;                              /*Estlizando subtitulo e lista, alterando tamanho espaços-internos e espessura*/
+    font-size: 17px;
+    text-align: left;
+    padding-top: 40px;
+}
+.secao-sobre .secao-sobre2 .sobre2-right ul {
+    padding: 20px 0 0 30px;
+}
+.secao-sobre .secao-sobre2 .sobre2-right ul li {
+    padding-bottom: 3px;
+    font-weight: 300;
+}
+/*Inicio da terceira section secao-espec*/
+.secao-espec .secao-espec1 {
+    text-align: center;          /*Estilizando título e parágrafo */
+    padding-top: 20px;
+    width: 600px;
+}
+.secao-espec .secao-espec1 h3 {
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.secao-espec .secao-espec1 p {
+    font-size: 15px;
+    font-weight: 300;  
+    padding-bottom: 40px;
+}
+.secao-espec .secao-espec2 {       /*Colocando as fotos lado a lado com flex-box obs: nao sei pq raios nao consegui usar justify-content entao usei width vw e deu o mesmo efeito*/
+    display: flex;                        
+    width: 55%;                                
+    flex-wrap: wrap;
+   
+}
+.secao-espec .secao-espec2 figure{
+    box-shadow: 2px 2px 10px rgb(116, 114, 114) ;          /*Estilizando a box com sombra e  centralizando a figcaption */
+    
+}
+.secao-espec .secao-espec2 img {
+    width: 300px;
+}
+.secao-espec .secao-espec2 figure figcaption {
+    text-align: center;
+    padding: 10px 0 10px 0 ;
+    margin-bottom: 20px;
+}
+/*Inicio a quarta section secao-contato*/
+.secao-contato{
+    text-align: center;
+}
+.secao-contato .contato-horario {
+    margin: 20px 0;                       /*Estilização do subtitulo e paragrafos*/
+}
+.secao-contato .contato-horario a {
+    color: #fff;
+    border: solid #00cad1;
+    background-color: #00cad1;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.secao-contato h3{
+    font-size: 18px;
+    padding: 20px;
+}
+.secao-contato p{
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0;
+    width: 33vw;
+}
+.secao-contato span{
+    font-weight: 700;
+}
+iframe {
+    padding: 15px 0 60px 0;
+    width: 55%; 
+    height: 400px;
+}
+/*Estilização do Rodapé*/
+footer {
+    background-color: #0c6e71;
+}
+footer .secao-footer {                     /*Estilizando o rodapé - atraves da flexbox centralizando e mantendo a imagem acima dos parágrafos*/
+    display: flex;
+    flex-direction: column;
+}
+footer .secao-footer img {
+    width: 120px;
+    padding: 20px 0;
+}
+footer .secao-footer .secao-footer-paragrafo {
+    padding-bottom: 20px;
+    text-align: center;
+}
+footer .secao-footer .secao-footer-paragrafo p {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*Iniciando a responsividade a diferentes telas atraves dos @medias querys, resoluçoes ajustadas - 425px - 768px - 1024px - Acima de 1024px*/
+
+@media only screen and (max-width: 425px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com as dimensão 425px*/    
+.secao-topo {
+    display: flex;
+    flex-flow: column;                /*Estilizando o topo*/
+}    
+.secao-topo nav {
+    border-top: 1px solid gray;
+    padding-bottom: 20px;
+    width: 80%;
+}
+.secao-topo nav a{
+    padding-left: 20px;
+}
+.secao-one {
+    background-image: url("assets/recepcao.png");   /* fundo com imagem, e estilizaçao da mesma*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+.secao-one .secao-one-texto {
+    padding-top: 60px;
+    
+}
+.secao-one .secao-one-texto h2{        
+       font-size: 24px;
+       color: white;
+       font-weight: 400;
+       width: 90%;
+}
+.secao-sobre {                        /* centralizando todas as section de acordo com a dimensão de max 425px*/
+    width: 80%;
+}
+.secao-sobre .secao-sobre2 .sobre2-right h2 {
+    text-align: center;
+}
+.secao-espec .secao-espec1 {
+    width: 80%;
+}
+.secao-espec .secao-espec2 {
+    width: 80%;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com a dimensão até 768px*/   
+    .secao-one {
+        background-image: url("assets/recepcao.png");   /* fundo com imagem, e estilizaçao da mesma*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+    .secao-one .secao-one-texto {
+        padding-top: 110px;
+    }
+    .secao-one .secao-one-texto h2{        
+           font-size: 32px;
+           color: white;
+           font-weight: 400;
+           width: 90%;
+    }
+    .secao-sobre .secao-sobre2 .sobre2-right h2 {
+        text-align: center;
+    }
+    .secao-sobre  .secao-sobre2 .sobre2-left{
+        display: none;
+    }
+    .secao-espec .secao-espec2{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com a dimensão até 1024px*/   
+    .secao-one {
+        background-image: url("assets/recepcao.png");   /* fundo com imagem, e estilizaçao da mesma*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+    }
+    .secao-one .secao-one-texto {
+        padding-top: 160px;
+    }
+    .secao-one .secao-one-texto h2{         
+           font-size: 30px;
+           color: white;
+           font-weight: 400;
+           width: 90%;
+    }
+}
