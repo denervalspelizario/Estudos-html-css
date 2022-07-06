@@ -173,49 +173,59 @@ footer .secao-footer .secao-footer-paragrafo p {
 /*Iniciando a responsividade a diferentes telas atraves dos @medias querys, resoluçoes ajustadas - 425px - 768px - 1024px - Acima de 1024px*/
 
 @media only screen and (max-width: 425px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com as dimensão 425px*/    
-.secao-topo {
-    display: flex;
-    flex-flow: column;                /*Estilizando o topo*/
-}    
-.secao-topo nav {
-    border-top: 1px solid gray;
-    padding-bottom: 20px;
-    width: 80%;
-}
-.secao-topo nav a{
-    padding-left: 20px;
-}
-.secao-one {
-    background-image: url("assets/recepcao.png");   /* fundo com imagem, e estilizaçao da mesma*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 200px;
-}
-.secao-one .secao-one-texto {
-    padding-top: 60px;
-    
-}
-.secao-one .secao-one-texto h2{        
-       font-size: 24px;
-       color: white;
-       font-weight: 400;
-       width: 90%;
-}
-.secao-sobre {                        /* centralizando todas as section de acordo com a dimensão de max 425px*/
-    width: 80%;
-}
-.secao-sobre .secao-sobre2 .sobre2-right h2 {
-    text-align: center;
-}
-.secao-espec .secao-espec1 {
-    width: 80%;
-}
-.secao-espec .secao-espec2 {
-    width: 80%;
-}
-
-}
+    .secao-topo {
+        display: flex;
+        flex-flow: column;                /*Estilizando o topo*/
+    }    
+    .secao-topo nav {
+        border-top: 1px solid gray;
+        padding-bottom: 20px;
+        width: 90%;
+    }
+    .secao-topo nav a{
+        padding-left: 35px;
+    }
+    .secao-one {
+        background-image: url("assets/recepcao3.png");   /* fundo com imagem, e estilizaçao da mesma*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+    }
+    .secao-one .secao-one-texto {
+        padding-top: 60px;
+        
+    }
+    .secao-one .secao-one-texto h2{        
+        font-size: 24px;
+        color: white;
+        font-weight: 400;
+        width: 90%;
+    }
+    .secao-sobre {                        /* centralizando todas as section de acordo com a dimensão de max 425px*/
+        width: 90%;
+    }
+    .secao-sobre .secao-sobre2 .sobre2-right h2 {
+        text-align: center;
+    }
+    .secao-sobre .secao-sobre2 .sobre2-right ul li {
+        font-size: 15px;                                    /*Ajustes a tela de textos, iframe e imagens*/
+    }
+    .secao-contato p{
+        font-size: 15px;
+        font-weight: 300;
+        padding: 10px 0;
+        width: 80%;
+    }
+    iframe {
+        padding: 15px 0 60px 0;
+        width: 80%; 
+        height: 300px;
+    }
+    .secao-espec .secao-espec1 {
+        width: 80%;
+    }
+    }
 
 
 @media only screen and (max-width: 768px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com a dimensão até 768px*/   
@@ -241,8 +251,22 @@ footer .secao-footer .secao-footer-paragrafo p {
     .secao-sobre  .secao-sobre2 .sobre2-left{
         display: none;
     }
-    .secao-espec .secao-espec2{
-        width: 40%;
+    .secao-espec .secao-espec2{                                                 /*Ajustes a tela de textos, iframe e imagens*/
+        width: 80%;
+    }
+    .secao-espec .secao-espec2 img {
+        width: 250px;
+    }
+    .secao-contato p{
+        font-size: 15px;
+        font-weight: 300;
+        padding: 10px 0;
+        width: 80%;
+    }
+    iframe {
+        padding: 15px 0 60px 0;
+        width: 80%; 
+        height: 300px;
     }
 }
 
@@ -262,5 +286,22 @@ footer .secao-footer .secao-footer-paragrafo p {
            color: white;
            font-weight: 400;
            width: 90%;
+    }
+    .secao-espec .secao-espec2{                                                 /*Ajustes a tela de textos, iframe e imagens*/
+        width: 80%;
+    }
+    .secao-espec .secao-espec2 img {
+        width: 250px;
+    }
+    .secao-contato p{
+        font-size: 15px;
+        font-weight: 300;
+        padding: 10px 0;
+        width: 80%;
+    }
+    iframe {
+        padding: 15px 0 60px 0;
+        width: 80%; 
+        height: 300px;
     }
 }

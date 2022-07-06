@@ -1,0 +1,109 @@
+* {
+    margin: 0 auto;                /*retirando as margem de cima a baixo e centralizando os elementos*/
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #7f8081;
+}
+/* Ajuste da secao topo*/
+.secao-topo {                         /*Criando o fundo do topo e colocando um em cada lado atravez do flex box*/
+    background-color: #00cad1;
+    display: flex;
+    justify-content: space-between;
+}
+.secao-topo figure a img {   /*Ajustando a imagem do topo*/
+    width: 120px;
+}
+.secao-topo nav {
+    padding-top: 20px;    /* Espaçamento para colocar na mesma linha que a left*/
+}
+.secao-topo nav a{            /*Estilização das tags da nav*/
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding-right: 10px;
+}
+.secao-topo nav a:hover {
+    color: #0c6e71;
+}
+
+/*Estilização da primeira seção*/
+
+.secao-one-espec {             /*Centralizando duas container (um texto e varios links agrupados)*/
+    display: flex;
+    flex-flow: column;
+    padding: 20px 0;
+}
+.secao-one-espec a {
+    text-decoration: none;
+    border-bottom: 2px solid #00cad1;          /*Estilizando links e subtitulo */
+    margin-right: 25px;
+}
+.secao-one-espec h2 {
+    padding-top: 30px;
+    font-size: 22px;
+}
+/*Estilização da tabela, são 5 section com estruturas iguais porem com infos diferentes*/
+.secao-profi {
+    width: 60%;
+    padding: 40px 0 20px 0;
+}
+.secao-profi .secao-profiup {                 /*Centralizando textos, subtitulos, estipulando tamanho e assim como largura de margens*/
+    text-align: center;
+    width: 50%;
+}
+.secao-profi .secao-profiup h3 {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.secao-profi .secao-profiup p {
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.secao-profi .secao-profidown {        /*Na segunda parte do container que esta dividia em tb dois container usa-se o flex para coloca-las lado a lado*/
+    display: flex;
+}
+.secao-profi .secao-profidown img {
+    width: 300px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilização do Rodapé*/
+footer {
+    background-color: #0c6e71;
+}
+footer .secao-footer {                     /*Estilizando o rodapé - atraves da flexbox centralizando e mantendo a imagem acima dos parágrafos*/
+    display: flex;
+    flex-direction: column;
+}
+footer .secao-footer img {
+    width: 120px;
+    padding: 20px 0;
+}
+footer .secao-footer .secao-footer-paragrafo {
+    padding-bottom: 20px;
+    text-align: center;
+}
+footer .secao-footer .secao-footer-paragrafo p {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
