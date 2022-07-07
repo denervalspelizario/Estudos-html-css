@@ -29,14 +29,15 @@
 /*Estilização da primeira seção*/
 
 .secao-one-espec {             /*Centralizando duas container (um texto e varios links agrupados)*/
-    display: flex;
-    flex-flow: column;
+    text-align: center;
     padding: 20px 0;
+    width: 80%;
 }
 .secao-one-espec a {
     text-decoration: none;
     border-bottom: 2px solid #00cad1;          /*Estilizando links e subtitulo */
     margin-right: 25px;
+    margin-top: 10px;
 }
 .secao-one-espec h2 {
     padding-top: 30px;
@@ -44,12 +45,12 @@
 }
 /*Estilização da tabela, são 5 section com estruturas iguais porem com infos diferentes*/
 .secao-profi {
-    width: 60%;
+    width: 100%;
     padding: 40px 0 20px 0;
 }
 .secao-profi .secao-profiup {                 /*Centralizando textos, subtitulos, estipulando tamanho e assim como largura de margens*/
     text-align: center;
-    width: 50%;
+    
 }
 .secao-profi .secao-profiup h3 {
     font-size: 18px;
@@ -58,36 +59,44 @@
 .secao-profi .secao-profiup p {
     font-weight: 300;
     padding-bottom: 20px;
+    font-size: 15px;
+    width: 500px;
 }
 .secao-profi .secao-profidown {        /*Na segunda parte do container que esta dividia em tb dois container usa-se o flex para coloca-las lado a lado*/
     display: flex;
+    width: 60%;
 }
 .secao-profi .secao-profidown img {
     width: 300px;
     height: 200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.secao-profi .secao-profidown table {        
+    width: calc(100% );                   /*Estruturando espaço da tabela e retirando sua borda*/
+    border-collapse: collapse;                
+}
+.secao-profi .secao-profidown table thead th{
+    background-color: #00cad1;
+    color: #fff;                                   /*Restilizaçao da thead da tabela */
+    text-align: start;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+.secao-profi .secao-profidown tbody tr:nth-child(odd) {
+    background-color: #bec2c7;                             /* Restilizaçao da tabela usando pseudo-classe para fazer efeito zebrado  usando odd-even */
+}
+.secao-profi .secao-profidown tbody tr:nth-child(even) {    
+    background-color: #dfe4e9;                             
+}
+.secao-profi .secao-profidown tbody tr td {
+    font-weight: 700;
+    padding: 5px 10px;
+    font-size: 13px;
+}
 
 /*Estilização do Rodapé*/
 footer {
     background-color: #0c6e71;
+    margin-top: 40px;
 }
 footer .secao-footer {                     /*Estilizando o rodapé - atraves da flexbox centralizando e mantendo a imagem acima dos parágrafos*/
     display: flex;
@@ -107,3 +116,77 @@ footer .secao-footer .secao-footer-paragrafo p {
     font-size: 15px;
     font-weight: 400;
 }
+/*Iniciando a responsividade a diferentes telas atraves dos @medias querys, resoluçoes ajustadas - 425px - 768px - 1024px - Acima de 1024px*/
+
+@media only screen and (max-width: 425px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com as dimensão 425px*/    
+    .secao-topo {
+        display: flex;
+        flex-flow: column;                /*Estilizando o topo*/
+        text-align: center;
+    }    
+    .secao-topo nav {
+        border-top: 1px solid gray;
+        padding-bottom: 20px;
+        width: 90%;
+    }
+    .secao-topo nav a{
+        padding-left: 35px;
+    }
+    .secao-one {
+        background-image: url("assets/recepcao3.png");   /* fundo com imagem, e estilizaçao da mesma*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+    }
+    .secao-one-espec h2 {
+        font-size: 18px;
+    }
+    
+    .secao-one .secao-one-texto h2{        
+        font-size: 24px;
+        color: white;
+        font-weight: 400;
+        width: 90%;
+    }
+    .secao-one-espec a   {                 /*Estilizando segunda seção, ajustando */
+        padding-top: 10px;
+    } 
+    
+    .secao-profi .secao-profiup p {       /*Ajustando tabela*/
+        width: 90%;
+    }
+    .secao-profi .secao-profidown {
+        width: 100%;
+    }
+    .secao-profi .secao-profidown img{
+        display: none;
+    }                  
+} 
+
+@media only screen and (max-width: 960px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com as dimensão 425px*/    
+   
+    .secao-one-espec h2 {
+        font-size: 18px;
+    }
+    
+    .secao-one .secao-one-texto h2{        
+        font-size: 24px;
+        color: white;
+        font-weight: 400;
+        width: 90%;
+    }
+    .secao-one-espec a   {                 /*Estilizando segunda seção, ajustando */
+        padding-top: 10px;
+    } 
+    
+    .secao-profi .secao-profiup p {       /*Ajustando tabela*/
+        width: 70%;
+    }
+    .secao-profi .secao-profidown {
+        width: 90%;
+    }
+    .secao-profi .secao-profidown img{
+        display: none;
+    }                  
+}       
