@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medcompany</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        header {
+            background-color: #ff7321;
+        }
+        header p {
+            color: #fff;
+            font-size: 20px;
+            padding: 15px ;
+        }
+        section {
+            width: 400px;
+        }
+        section h1 {
+            padding: 30px 0;
+            color: #ff7321;
+            font-size: 30px;
+        }
+        section p {
+            padding-bottom: 20px;
+        }
+        section .secao-action-up label{
+            display: flex;
+            padding-bottom: 20px;
+        }    
+        section .secao-action-up input{
+            width: 400px;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        section p{
+            padding-top: 20px;
+        }
+        section button {
+            width: 420px;
+            color: #fff;
+            background-color: #ff7321;
+            border:  solid;
+            font-size: 18px;
+            padding: 5px 0;
+            margin-top: 10px;
+        }
+        footer{
+            background-color: #ff7321;
+            margin-top: 210px;
+        }
+        footer p{
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p>MedCompany</p>
+    </header>
+    <main>
+        <section>
+            <h1>Formulários de exame</h1>
+            <p>Preencha o formulário abaixo com sua informações.</p>
+            <form action="https://www.devmedia.com.br/codigos/formularios/aula6/">
+                <div class="secao-action-up">
+                    <label for="nome_texto">Nome</label>
+                    <input required type="text" name="nome" id="nome_texto" minlength="3" maxlength="120" />
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <input required type="date" name="data_nascimento" id="data_nascimento" max="2004-01-01" />
+                    <label for="email-usuario">Email</label>
+                    <input required type="email" name="email" placeholder="email@provedor.com" id="email-usuario" maxlength="25" minlength="8"/>
+                </div>
+                <div>
+                    <p>Você possui tatuagem?</p>
+                    <div class="secao-form-down">
+                        <input type="radio" name="tatuagem" value="sim" id="tatuagem-sim" required/>
+                        <label for="tatuagem-sim">Sim</label>
+                    </div>
+                    <div class="secao-form-down">
+                        <input type="radio" name="tatuagem" value="nao" id="tatuagem-nao"/>
+                        <label for="tatuagem-nao">Não</label>
+                    </div>
+                </div>
+                <div>
+                    <p>Última vez que doou sangue?</p>
+                    <div class="secao-form-down">
+                        <input type="radio" name="doacao" value="6 meses" id="doacao-meses" required/>
+                        <label for="doacao-meses">Nos últimos 6 meses</label>
+                    </div>
+                    <div class="secao-form-down">
+                        <input type="radio" name="doacao" value="1 ano" id="doacao-ano"/>
+                        <label for="doacao-ano">Há 1 ano ou mais</label>
+                    </div>
+                    <div class="secao-form-down">
+                        <input type="radio" name="doacao" value="nunca" id="doacao-nunca"/>
+                        <label for="doacao-nunca">Nunca doei sangue</label>
+                    </div>
+                </div>
+                <button type="submit">Enviar Fomulário</button>
+            </form>    
+        </section>
+    </main>
+    <footer>
+        <p>Copyright2022 - MedCompany</p>
+    </footer>
+</body>
+</html>
