@@ -1,12 +1,9 @@
 * {
-
     margin: 0 auto;      /*retirando as margem de cima a baixo e centralizando os elementos*/
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 .secao-topo {
-
     display: flex;      /*Colocando um do lado do outro*/
     justify-content: space-between;
     width: 100%;
@@ -16,26 +13,18 @@
     border: 1px solid rgb(255, 250, 250);
     z-index: 1;
 }
-
 .secao-topo figure img {
-
-    width: 150px;
-    
-    
+    width: 150px;    
 }
-
 .secao-topo ul {
     display: flex;        /*Colocando a lista lado a lado*/
 }
-
-.secao-topo ul li {                  
-      
+.secao-topo ul li {                       
     text-decoration: none;             /*Estilizando a lista, colocando espaços laterias e up e down e arrumando o tamanho da fonte */
     list-style: none;
     padding: 20px 15px 0 20px;
     font-size: 18px;
 }
-
 .secao-topo ul li a {              /*Estlizando a link*/
 
     text-decoration: none;
@@ -114,166 +103,117 @@ main ,footer{                             /*Como foi usado o position fixed no t
      top: 0;
      left: 0;
 }
-
-
-
 /*Estilização section 2 ----------------------------------------------------------------------------------------*/
-
-
 .secao-cidade {          /*Definindo tamanho 63%* para ficar exatamente da mesma largura do topo, padding pra espaçar cima e baixo das outras section*/
     width: 63%;
     padding: 50px 0;
     text-align: center;
-
 }
-
 .secao-cidade h2 {
-
     padding-bottom: 40px ;        /*Estlização  do subtítulo*/
     font-size: 30px;
     font-weight: 400;
-
 }
-
 .secao-cidade figure {       
-
     padding-bottom: 20px;
 }
-
-.secao-cidade figure img {
-       
-       width: 100%;
-       
+.secao-cidade figure img {       
+    width: 100%;       
 }
-
-.secao-cidade p {
-    
+.secao-cidade p {    
       text-align: justify;
       padding-bottom: 20px;
       font-weight: lighter;
       font-size: 16px;
-
 }
-
 .secao-cidade p::first-letter{    /*Colocando "first letter" pra que todas os paragrafos comecem com estilização personalizada*/
 
     font-weight: bold;
     font-size: 20px;
 }
-
 /* Estilização section 3 -------------------------------------------------------------------------------*/
-
 .secao-turistico {
-
-    width: 100vw;
+    width: 100%;
     padding: 50px 0;
     text-align: center;
     background-color: rgb(224, 223, 223);
-
-
 }
-
-
 .secao-turistico .secao-turistico-int {
-
-     width: 63vw;          /* Alterando tamanho pra ajustar a margens das outras section*/
-
-
+     width: 63%;          /* Alterando tamanho pra ajustar a margens das outras section*/
 }
-
 .secao-turistico h2 {
-
     padding-bottom: 40px ;        /*Estlização  do subtítulo*/
     font-size: 30px;
     font-weight: 400;
 }
-
 .secao-turistico figure{
-
     padding-bottom: 20px;
 }
 .secao-turistico figure img{
-
     width: 100%;
 }
 
 .secao-turistico p {
     text-align: start;
     padding-bottom: 20px;
- 
 }
 
 .secao-turistico ul {
-
     text-align: start; 
 }
 
 .secao-turistico ul li {
-
     list-style: none;
-
 }
 
 .secao-turistico ul li img {
-
     padding: 5px 5px 0 0 ;
-
 }
-
-
-  /* Estilização ultima section--------------------------------------------------------------------*/
-
+/* Estilização ultima section--------------------------------------------------------------------*/
 .secao-galeria {
-
     width: 63%;
     padding: 50px 0;
     text-align: center;
-
 }
-
 .secao-galeria h2 {
-
     padding-bottom: 40px ;        /*Estlização  do subtítulo*/
     font-size: 30px;
     font-weight: 400;
 }
 
 .secao-galeria p {
-
     text-align: start;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px;    
 }
-
-
 .secao-galeria div {      /*Foi criado uma div para cada sequencia para facilitar fazer as colunas */
-
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    
 }
-
 .secao-galeria div img {     /*Alterando tamanho, e adicionando opacity para atravez da funçao "hover" dar um efeito ao passar o mouse*/
-
-     width: 350px;
-
-     padding-bottom: 30px;
-     opacity: 0.5;
-     
+    width: 350px;
+    padding-bottom: 30px;
+    opacity: 0.5;     
 }
-
 .secao-galeria div img:hover {
-
      opacity: 1;     
-
 }
-
-
-footer  p{                             /*Estlização do rodapé*/
-                  
+footer  p{                             /*Estlização do rodapé*/                  
     background-color: rgb(248, 182, 1);
     text-align: center;    
     padding: 18px;
-
+}
+/*Criando responsividade para dispositivios de resolução até 425px e 768px */
+/*Responsividade até 425px*/
+@media only screen and (max-width: 425px) {
+    .secao-topo{
+        display: flex;
+        flex-flow: column;       /*Estilizando o topo, colocando a img acima dos links da nav */
+    }
+    .secao-topo ul li {                       
+        text-decoration: none;             /*Estilizando a lista, colocando espaços laterias e up e down e arrumando o tamanho da fonte */
+        list-style: none;
+        padding: 20px 10px 0 15px;
+        font-size: 16px;
+    }
 }
