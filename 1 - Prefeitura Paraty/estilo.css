@@ -32,27 +32,22 @@
     background-color: white;
     border-radius: 10px;          /*Foi adcionado essa borda branca para adicionar marcar o espaço para quando entrar a hover e nao haver mudança de no */
     padding: 10px 10px;
-
 }
-
 .secao-topo ul li a:hover{
     background-color: black;
     opacity: .8;
     border-radius: 10px;
     color: white;
     padding: 10px 10px;
-    
 }
 
 /*Estilização section 1 --------------------------------------------------------------------------------------------------------------*/
 
 main ,footer{                             /*Como foi usado o position fixed no topo tive que colocar um relative no main e o footer pra ficar abaixo*/
- 
     position: relative;
     top: 100px;
     z-index: 0;                 /* z index foi usado para ficar atras do topo*/
 }
-
 .secao-capa {                    /*Inserindo uma imagem cobrindo a div inteira, */
     padding-bottom: 500px;
     bottom: 100px;
@@ -61,38 +56,26 @@ main ,footer{                             /*Como foi usado o position fixed no t
     background-image: url("asset/bg-estacao.jpg");
     background-repeat: no-repeat ;
     background-size: cover;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    
-    
 }
-
 .secao-capa .secao-capa-int {  /*div interna da secao-capa para posicionar no centro a letra*/
-
-      position: relative;
-      top: 250px;
-    
-
+    position: relative;
+    top: 250px;
 }
-
-.secao-capa .secao-capa-int h1 {
-    
+.secao-capa .secao-capa-int h1 {    
     font-size: 100px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
-
-.secao-capa .secao-capa-int h2 {
-    
+.secao-capa .secao-capa-int h2 {   
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
-
 .secao-capa::before {                 /* :before para criar uma capa do mesmo tamanho porem ficando acima da "secao-capa"  nao esquecer do content */
      content: "";
      background-color: black;      
@@ -210,10 +193,53 @@ footer  p{                             /*Estlização do rodapé*/
         display: flex;
         flex-flow: column;       /*Estilizando o topo, colocando a img acima dos links da nav */
     }
+    .secao-topo figure img {
+        width: 160px;
+        padding-right: 20px;
+    }
+    .secao-topo ul {
+        margin: 0 20px 10px 0;
+    }
     .secao-topo ul li {                       
         text-decoration: none;             /*Estilizando a lista, colocando espaços laterias e up e down e arrumando o tamanho da fonte */
         list-style: none;
-        padding: 20px 10px 0 15px;
+        padding: 10px 0px 0 15px;
         font-size: 16px;
     }
-}
+    .secao-capa {
+        width: 425px;       
+    }
+    .secao-capa .secao-capa-int h1 {    
+        font-size: 80px;
+    }
+    .secao-capa .secao-capa-int h2 {    
+        font-size: 40px;
+    }
+    .secao-cidade {
+        width: 90%;
+    }
+    .secao-cidade h2 {
+        font-size: 25px;                    /*Estlização  do subtítulo*/   
+    }
+    .secao-cidade figure {       
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .secao-cidade figure img {       
+        width: 350px;     
+    }
+    .secao-cidade p {    
+          text-align: justify;
+          padding-bottom: 20px;
+          font-weight: lighter;
+          font-size: 16px;
+    }
+    .secao-turistico .secao-turistico-int {
+        width: 90%;          /* Alterando tamanho pra ajustar a margens das outras section*/
+    }
+    .secao-galeria {
+        width: 90%;
+    }
+    .secao-galeria p{
+        padding-left: 20px;
+    }
