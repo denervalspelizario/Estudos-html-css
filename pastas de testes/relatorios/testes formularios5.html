@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista -  Cadastro</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        header{
+            background-color: #0f52a5;
+        }
+        header p {
+            color: #fff;
+            font-size: 20px;
+            padding: 15px ;
+        }
+        section  {
+            width: 500px;
+        }
+        section div h1 {
+            color: #0f52a5;
+            font-size: 35px;
+            padding: 30px 0;
+        }
+        section div p {
+            padding-right: 100px;
+            line-height: 30px;
+        }
+        section fieldset {
+            padding: 10px;
+            margin: 20px 0;
+            width: 400px;
+        }
+        section fieldset legend {
+            margin-left: 20px;
+            padding: 0 10px ;
+        }
+        section fieldset div label{
+            display: flex;
+            padding: 10px 0;
+        }
+        section fieldset div input {
+            width: 390px;
+            padding: 5px;
+        }
+        section button {
+            width: 430px;
+            background-color: #0f52a5;
+            color: #f8f8f8;
+            padding: 10px 0;
+            font-size: 20px;
+            border: #0f52a5;
+        }
+        footer p{
+            color: #0f52a5;
+            text-align: center;
+            padding: 10px 60px 10px 0;
+            margin-top: 90px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Revista</p>
+    </header>
+    <main>
+        <section>
+            <div>
+                <h1>Cadastro</h1>
+                <p>
+                    Estamos lançando uma nova revista e enviaremos o
+                    primeiro exemplar grátis para todos que se cadastrarem
+                    hoje no site.
+                </p>
+            </div>
+            <div>
+                <form action="https://www.devmedia.com.br/codigos/formularios/aula8/">
+                <fieldset>
+                    <legend>Dados de contato</legend>
+                    <div>
+                        <label for="nome_user">Nome:</label>
+                        <input id="nome_user" type="text" name="nome" minlength="4" maxlength="100" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div>
+                        <label for="email_user">Email:</label>
+                        <input id="email_user" type="email" name="email" minlength="8" maxlength="120" placeholder="exemplo@email.com" required >
+                    </div>
+                    <div>
+                        <label for="telefone_user">Telefone:</label>
+                        <input id="telefone_user" type="tel" name="telefone" min="11" max="11" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados de entrega</legend>
+                    <div>
+                        <label for="end_user">Endereço:</label>
+                        <input id="end_user" type="text" name="endereco" minlength="10" maxlength="120" placeholder="Rua, Avenida, Travessa..." required>
+                    </div>
+                    <div>
+                        <label for="number_user">Numero:</label>
+                        <input id="number_user" type="number" name="numero" min="1" max="250000"  required >
+                    </div>
+                    <div>
+                        <label for="comp_user">Complemento:</label>
+                        <input id="comp_user" type="text" name="complemento" minlength="1" maxlength="120"  required>
+                    </div>
+                </fieldset>
+                    <button type="submit">Cadastrar</button>
+            </form>
+            </div>
+        </section>
+    </main> 
+    <footer>
+        <p>Copyright 2022 - Revista</p>
+    </footer>   
+</body>
+</html>
