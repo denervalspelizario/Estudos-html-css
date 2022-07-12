@@ -1,0 +1,402 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+}
+header .secao-topo  {
+    background-color: #fff;
+    width: 100%;                        /*Estilizando o header, com fundo branco, espaçamento de tamanho 1024px ,um texto na ponta  esquerda e sem menu*/
+}
+header .secao-topo .secao-topo-in {
+    width: 1024px;
+}
+header .secao-topo .secao-topo-in p {
+    padding: 20px ;
+    font-size: 25px;
+    font-weight: 700;
+}
+/*Estilizando a primeira section "secao-capa" */
+.secao-capa{
+    background-image: url("asset/capa.jpg");              /*Adicionando imagem de fundo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+.secao-capa .secao-capa-int {
+    background-color: rgba(0,0,0,.6);              
+    padding: 30px;                                 /*Colocando  uma faixa com opacity ultilizando rgba pois nao quero que o elemento filho no caso o texto nao tenha opacity*/
+}
+.secao-capa .secao-capa-int .secao-capa-text {
+    margin: 30px 100px 20px 0;
+}
+.secao-capa  .secao-capa-int .secao-capa-text p{
+    text-align: right;
+    width: 1024px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+/*Estilizando a segunda section "secao-sobre"*/
+.secao-sobre {
+    width: 1024px;
+    padding: 40px 0;
+}
+.secao-sobre .secao-sobre-textup h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.secao-sobre .secao-sobre-textup p{
+    font-size: 18px;
+    padding: 0 100px 20px 0;                  /* Estilizando da secao-sobre com um h2, um texto e um container com 3 imagems lado a lado  */
+    font-weight: lighter;
+}                                                 /*Estilizando e paragrafos com border-right*/
+.secao-sobre .secao-sobre-img {
+    display: inline-flex;
+}
+.secao-sobre .secao-sobre-img img {
+    width: 300px;
+    height: 200px;
+    padding-left: 5px;
+}
+.secao-sobre .secao-sobre-textdown p {
+    margin: 10px 0 10px 5px;
+    padding-left: 10px;
+    border-left: 1px solid #000;
+}
+/*Estlizando uma pequena divisão na tela chamada  secao-contato*/
+.secao-contato {
+    background-color: #d92121 ;
+    padding: 40px 0;
+    margin: 20px 0;                                  /*contêm 2 container cada um com background pra fazer efeito zebrado */
+}
+.secao-contato .secao-contato-int {
+    background-color: #6b0000;
+    
+}
+.secao-contato .secao-contato-int h3 {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+/*Estilização da ultima section*/
+.secao-cadastro {
+    width: 1024px;
+    padding: 30px 0 0 40px;
+}
+.secao-cadastro .secao-cadastro-up h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.secao-cadastro .secao-cadastro-up  {
+    padding-bottom: 20px;
+}
+.secao-cadastro .secao-cadastro-down {
+    padding-bottom: 20px;
+    padding-right: 140px;
+}
+.secao-cadastro .secao-cadastro-down fieldset {
+    padding: 0 0 10px 10px;           
+    margin-bottom: 10px;                                 /*Estilização padrão do formulário ajustanto espaços externo e interno*/
+}
+.secao-cadastro .secao-cadastro-down fieldset legend {
+    margin-left: 10px;
+    padding: 0 3px;
+}
+.secao-cadastro .secao-cadastro-down fieldset label{
+    display: flex;
+    padding: 10px 0;                                    /**/
+}                                           
+.secao-cadastro .secao-cadastro-down fieldset input {
+    width: 98%;
+    padding: 5px 0;
+}
+.secao-cadastro .secao-cadastro-down select {
+    width: 98%;
+    background-color: #fff;
+    border: 1px solid rgb(141, 141, 141);           /*Ajustando o select para ter a mesma aparência das labels*/
+    padding: 5px 0;
+    border-radius: 2px;
+}
+.secao-cadastro button {
+    width: 100%;
+    border: solid #d92121 ;
+    background-color: #d92121;                   /*button com largura da fieldset*/
+    color: #fff;
+    padding: 5px 0;
+    font-size: 15px;
+}
+footer p{
+    background-color: #f8f8f8;
+    color: #d92121;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 80px 20px 0;
+}
+/*Iniciando a responsividade a diferentes telas atraves dos , resoluçoes - 425px - 768px - 1024px - Acima de 1024px*/
+/*Responsividade resolução ate 425px*/
+@media only screen and (max-width: 425px) {
+    header .secao-topo .secao-topo-in p {
+        padding: 10px ;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .secao-capa{
+        background-image: url("asset/capa.jpg");              /*ajustando secao-capa a dimensão*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+    }
+    .secao-capa .secao-capa-int .secao-capa-text {
+        margin: 5px 5px 5px 0;
+    }
+    .secao-capa  .secao-capa-int .secao-capa-text p{
+        width: 100%;
+        color: #fff;
+        font-size: 20px;
+    }
+    .secao-sobre {
+        width: 90%;
+    }
+    .secao-sobre .secao-sobre-textup h2 {             /*Ajustando as imgs da secao-sobre*/
+        text-align: center;
+        font-size: 25px;
+    }
+    .secao-sobre .secao-sobre-textup p{
+        font-size: 16px;
+        text-align: justify; 
+        width: 90%;   
+        padding-left: 20px;              /* */
+    } 
+    .secao-sobre .secao-sobre-img {
+        display: flex;
+        flex-flow: column;
+    }
+    .secao-sobre .secao-sobre-img img {
+        width: 350px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .secao-sobre .secao-sobre-textdown p {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .secao-cadastro {
+        width: 100%;
+    }
+    .secao-cadastro .secao-cadastro-up p{
+        text-align: justify;
+        margin-right: 80px;
+    }                        
+    .secao-cadastro .secao-cadastro-down  {
+       width: 350px;                                
+    }
+    .secao-cadastro .secao-cadastro-down fieldset  {
+       padding-right: 10px;                               
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        font-size: 15px;
+        padding-left: 80px;
+    }
+}    
+/*Responsividade resolução ate 720px*/
+@media only screen and (max-width: 720px) {
+    header .secao-topo .secao-topo-in p {
+        padding: 10px ;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .secao-capa{
+        background-image: url("asset/capa.jpg");              /*ajustando secao-capa a dimensão*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+    }
+    .secao-capa .secao-capa-int .secao-capa-text {
+        margin: 5px 5px 5px 0;
+    }
+    .secao-capa  .secao-capa-int .secao-capa-text p{
+        width: 100%;
+        color: #fff;
+        font-size: 20px;
+    }
+    .secao-sobre {
+        width: 90%;
+    }
+    .secao-sobre .secao-sobre-textup h2 {             /*Ajustando as imgs da secao-sobre*/
+        text-align: center;
+        font-size: 25px;
+    }
+    .secao-sobre .secao-sobre-textup p{
+        font-size: 16px;
+        text-align: justify; 
+        width: 90%;   
+        padding-left: 20px;              /* */
+    } 
+    .secao-sobre .secao-sobre-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .secao-sobre .secao-sobre-img img {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .secao-cadastro {
+        width: 100%;
+    }
+    .secao-cadastro .secao-cadastro-up p{
+        text-align: justify;
+        margin-right: 80px;
+    }                        
+    .secao-cadastro .secao-cadastro-down  {
+        width: 90%;                               
+    }
+    .secao-cadastro .secao-cadastro-down fieldset  {
+        padding-right: 10px;                               
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        font-size: 15px;
+        padding-left: 90px;
+    }
+}        
+    
+/*Responsividade resolução ate 854px*/
+@media only screen and (max-width: 854px) {
+    header .secao-topo .secao-topo-in p {
+        padding: 10px ;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .secao-capa{
+        background-image: url("asset/capa.jpg");              /*ajustando secao-capa a dimensão*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+    }
+    .secao-capa .secao-capa-int .secao-capa-text {
+        margin: 5px 5px 5px 0;
+    }
+    .secao-capa  .secao-capa-int .secao-capa-text p{
+        width: 100%;
+        color: #fff;
+        font-size: 20px;
+    }
+    .secao-sobre {
+        width: 90%;
+    }
+    .secao-sobre .secao-sobre-textup h2 {             /*Ajustando as imgs da secao-sobre*/
+        text-align: center;
+        font-size: 25px;
+    }
+    .secao-sobre .secao-sobre-textup p{
+        font-size: 16px;
+        text-align: justify; 
+        width: 90%;   
+        padding-left: 20px;              
+    } 
+    .secao-sobre .secao-sobre-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .secao-sobre .secao-sobre-img img {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .secao-cadastro {
+        width: 100%;
+    }
+    .secao-cadastro .secao-cadastro-up p{
+        text-align: justify;
+        margin-right: 80px;
+    }                        
+    .secao-cadastro .secao-cadastro-down  {
+        width: 90%;                               
+    }
+    .secao-cadastro .secao-cadastro-down fieldset  {
+        padding-right: 10px;                               
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        font-size: 15px;
+        padding-left: 80px;
+    }
+}        
+    /*Responsividade resolução ate 1024px*/
+@media only screen and (max-width: 1024px) {
+    header .secao-topo .secao-topo-in p {
+        padding: 10px ;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .secao-capa{
+        background-image: url("asset/capa.jpg");              /*ajustando secao-capa a dimensão*/
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 200px;
+    }
+    .secao-capa .secao-capa-int .secao-capa-text {
+        margin: 5px 5px 5px 0;
+    }
+    .secao-capa  .secao-capa-int .secao-capa-text p{
+        width: 100%;
+        color: #fff;
+        font-size: 20px;
+    }
+    .secao-sobre {
+        width: 90%;
+    }
+    .secao-sobre .secao-sobre-textup h2 {             /*Ajustando as imgs da secao-sobre*/
+        text-align: center;
+        font-size: 25px;
+    }
+    .secao-sobre .secao-sobre-textup p{
+        font-size: 16px;
+        text-align: justify; 
+        width: 90%;   
+        padding-left: 20px;              
+    } 
+    .secao-sobre .secao-sobre-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .secao-sobre .secao-sobre-img img {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+    .secao-cadastro {
+        width: 100%;
+    }
+    .secao-cadastro .secao-cadastro-up p{
+        text-align: justify;
+        margin-right: 80px;
+    }                        
+    .secao-cadastro .secao-cadastro-down  {
+        width: 90%;                               
+    }
+    .secao-cadastro .secao-cadastro-down fieldset  {
+        padding-right: 10px;                               
+    }
+    footer{
+        width: 100%;
+    }
+    footer p{
+        font-size: 15px;
+        padding-left: 80px;
+    }
+}        
+    

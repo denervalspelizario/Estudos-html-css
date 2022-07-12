@@ -5,6 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vagas para Programadores</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        header {
+            background-color: #ff21c5;
+        }
+        header p {
+            color: #fff;
+            font-size: 20px;
+            padding: 15px ;
+        }
+        section {
+            width: 500px;
+        }
+        section h1 {
+            color: #ff21c5;
+            padding: 25px 0;
+            font-size: 30px;
+        }
+        section p {
+            padding-bottom: 20px;
+        }
+        section .secao-form-first label {
+            display: flex;
+            padding: 15px 0;
+        }
+
+        section .secao-form-first .input-style {
+            width: 400px;
+            height: 25px;
+        }
+        section .secao-form-midle label {
+            display: flex;
+            padding: 15px 0;
+        }
+        section .secao-form-midle select {
+            width: 405px;
+            height: 30px;
+            border:  1px solid rgb(155, 153, 153);
+            padding: 5px 0;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 2px;
+        }
+        section .secao-form-last label{
+            display: flex;
+            padding-bottom: 15px;
+        }
+        section .secao-form-last select {
+            width: 405px;
+            height: 100px;
+        }
+        section button {
+            width: 405px;
+            background-color: #ff21c5;
+            padding: 5px 0;
+            color: #fff;
+            font-size: 18px;
+            margin-top: 20px;
+            border: solid #ff21c5;
+        }
+        footer{
+            background-color: #f8f8f8;
+            margin-top: 190px;
+            padding: 10px 0;
+        }
+        footer p{
+            color: #ff21c5;
+            font-size: 20px;
+            text-align: center;
+            padding-right: 80px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,50 +89,72 @@
     <main>
         <section>
             <h1>Formulário de vagas para programadores</h1>
-            <p>Preencha o formulário abaixo com sua informações</p>
+            <p>Preencha o formulário abaixo com sua informações.</p>
             <div>
-                <form action="">
-                    <label for="Nome_programador">Nome</label>
-                    <input type="text" name="" id="Nome_programador">
-                    <label for="data_nascimento">Data de Nascimento</label>
-                    <input type="date" name="" id="data_nascimento">
-                    <label for="email_progr">Email</label>
-                    <input type="text" name="" id="email_progr" placeholder="email@provedor.com">
-                    <label for="estado_prog">Estado:</label>
-                    <select name="estado">
-                        <optgroup label="Selecione seu Estado">
-                            <option value="Acre">Acre(AC)</option>
-                            <option value="Alagoas">Alagoas(AL)</option>
-                            <option value="Amapa">Amapá(AP)</option>
-                            <option value="Amazonas">Amazonas(AM)</option>
-                            <option value="Bahia">Bahia(BA)</option>
-                            <option value="Ceara">Ceará(CE)</option>
-                            <option value="DistritoFederal">Distrito Federal(DF)</option>
-                            <option value="EspiritoSanto">Espírito Santo(ES)</option>
-                            <option value="Goias">Goiá(GO)</option>
-                            <option value="Maranhao">Maranhão(MA)</option>
-                            <option value="Matogrosso">Mato Grosso(MT)</option>
-                            <option value="Matogrossodosul">Mato Grosso do Sul(MS)</option>
-                            <option value="Minasgerais">Minas Gerais(MG)</option>
-                            <option value="Para">Pará(PA)</option>
-                            <option value="Paraiba">Paraíba(PB)</option>
-                            <option value="Parana">Paraná(PR)</option>
-                            <option value="Pernanbuco">Pernanbuco(PE)</option>
-                            <option value="Piaui">Piauí(PI)</option>
-                            <option value="Riodejaneiro">Rio de Janeiro(RJ)</option>
-                            <option value="Riograndedonorte">Rio Grande do Norte(RN)</option>
-                            <option value="">Acre</option>
-                            <option value="Acre">Acre</option>
-                            <option value="Acre">Acre</option>
-                            <option value="Acre">Acre</option>
-                            <option value="Acre">Acre</option>
-                            <option value="Acre">Acre</option>
-                            <option value="Acre">Acre</option>
-                       </optgroup>
+                <form action="https://www.devmedia.com.br/codigos/formularios/aula7/">
+                    <div class="secao-form-first">
+                        <label for="Nome_programador">Nome:</label>
+                        <input type="text" name="nome" id="Nome_programador" class="input-style" minlength="4" maxlength="120" required>
+                        <label for="data_nascimento">Data de Nascimento:</label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" class="input-style" max="2004-01-01" required>
+                        <label for="email_progr">Email:</label>
+                        <input type="text" name="email" id="email_progr" placeholder="email@provedor.com" class="input-style" minlength="8" maxlength="120" required>
+                    </div>
+                    <div class="secao-form-midle">
+                        <label for="estado_prog">Estado:</label>
+                        <select name="estado" id="estado_prog" required>
+                            <optgroup label="Selecione seu Estado">
+                                <option value="AC">Acre(AC)</option>
+                                <option value="AL">Alagoas(AL)</option>
+                                <option value="AP">Amapá(AP)</option>
+                                <option value="AM">Amazonas(AM)</option>
+                                <option value="BA">Bahia(BA)</option>
+                                <option value="CE">Ceará(CE)</option>
+                                <option value="DF">Distrito Federal(DF)</option>
+                                <option value="ES">Espírito Santo(ES)</option>
+                                <option value="GO">Goiá(GO)</option>
+                                <option value="MA">Maranhão(MA)</option>
+                                <option value="MT">Mato Grosso(MT)</option>
+                                <option value="MS">Mato Grosso do Sul(MS)</option>
+                                <option value="MG">Minas Gerais(MG)</option>
+                                <option value="PA">Pará(PA)</option>
+                                <option value="PB">Paraíba(PB)</option>
+                                <option value="PR">Paraná(PR)</option>
+                                <option value="PE">Pernanbuco(PE)</option>
+                                <option value="PI">Piauí(PI)</option>
+                                <option value="RJ">Rio de Janeiro(RJ)</option>
+                                <option value="RN">Rio Grande do Norte(RN)</option>
+                                <option value="RS">Rio Grande do Sul(RS)</option>
+                                <option value="RO">Rondônia(RO)</option>
+                                <option value="SC">Santa Catarina(SC)</option>
+                                <option value="SP">São Paulo(SP)</option>
+                                <option value="SE">Sergipe(SE)</option>
+                                <option value="TO">Tocantis(TO)</option>
+                           </optgroup>
+                        </select>  
+                    </div>
+                    <div class="secao-form-last">
+                        <label for="tecno">Tecnologias:</label>   
+                        <select name="tecnologias[]" size="6" multiple id="tecno"  required>
+                            <option value="C">C</option>
+                            <option value="C++">C++</option>
+                            <option value="C#">C#</option>
+                            <option value="HTML">HTML</option>
+                            <option value="Java">Java</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Python">Python</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="XML">XML</option>
+                        </select>    
+                    </div>
+                    <button type="submit">Enviar Formulário</button>
                 </form>
             </div>
         </section>
     </main>
-    
+    <footer>
+        <p>Copyright2022 - MedCompany</p>
+    </footer> 
 </body>
 </html>
