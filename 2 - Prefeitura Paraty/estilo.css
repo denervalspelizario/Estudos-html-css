@@ -174,7 +174,7 @@ main ,footer{                             /*Como foi usado o position fixed no t
     box-sizing: border-box;
 }
 .secao-galeria div img {     /*Alterando tamanho, e adicionando opacity para atravez da funçao "hover" dar um efeito ao passar o mouse*/
-    width: 350px;
+    width: 250px;
     padding-bottom: 30px;
     opacity: 0.5;     
 }
@@ -243,3 +243,101 @@ footer  p{                             /*Estlização do rodapé*/
     .secao-galeria p{
         padding-left: 20px;
     }
+}        
+    /*Responsividade até 540px*/
+@media only screen and (max-width: 540px) {
+    .secao-topo{
+        display: flex;
+        flex-flow: column;       /*Estilizando o topo, colocando a img acima dos links da nav */
+    }
+    .secao-topo figure img {
+        width: 180px;
+        padding-right: 20px;
+    }
+    .secao-topo ul {
+        margin: 0 20px 10px 0;
+    }
+    .secao-topo ul li {                       
+        font-size: 18px;   /*Estilizando a lista, colocando espaços laterias e up e down e arrumando o tamanho da fonte */
+    }
+    .secao-capa {
+        width: 425px;       
+    }
+    .secao-capa .secao-capa-int h1 {    
+        font-size: 80px;
+    }
+    .secao-capa .secao-capa-int h2 {    
+        font-size: 40px;
+    }
+    .secao-cidade {
+        width: 90%;
+    }
+    .secao-cidade h2 {
+        font-size: 25px;                    /*Estlização  do subtítulo*/   
+    }
+    .secao-cidade figure {       
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .secao-cidade figure img {       
+        width: 350px;     
+    }
+    .secao-cidade p {    
+          text-align: justify;
+          padding-bottom: 20px;
+          font-weight: lighter;
+          font-size: 16px;
+    }
+    .secao-turistico .secao-turistico-int {
+        width: 90%;          /* Alterando tamanho pra ajustar a margens das outras section*/
+    }
+    .secao-galeria {
+        width: 90%;
+    }
+    .secao-galeria p{
+        padding-left: 20px;
+    }
+}
+/*Responsividade tela até 720px*/    
+@media only screen and (max-width: 720px) {
+    .secao-capa {
+        width: 425px;       
+    }
+    .secao-capa .secao-capa-int h1 {    
+        font-size: 80px;
+    }
+    .secao-capa .secao-capa-int h2 {    
+        font-size: 40px;
+    }
+    .secao-cidade {
+        width: 90%;
+    }
+    .secao-cidade h2 {
+        font-size: 25px;                    /*Estlização  do subtítulo*/   
+    }
+    .secao-cidade figure {       
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .secao-cidade figure img {       
+        width: 350px;     
+    }
+    .secao-cidade p {    
+          text-align: justify;
+          padding-bottom: 20px;
+          font-weight: lighter;
+          font-size: 16px;
+    }
+    .secao-turistico .secao-turistico-int {
+        width: 90%;             /* Alterando tamanho pra ajustar a margens das outras section*/
+    }
+    .secao-galeria {
+        width: 90%;
+    }
+    .secao-galeria .secao-galeria-img img {
+        width: 200px;
+    }
+    .secao-galeria p{
+        padding-left: 20px;
+    }   
+}    
