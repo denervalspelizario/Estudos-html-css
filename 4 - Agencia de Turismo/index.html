@@ -4,153 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Agência de Turismo"> 
+    <meta name="description" content="Agência de Turismo">
+    <link rel="stylesheet" href="styles.css"> 
     <title>Agência de Viagens</title>
 </head>
 <body>
     <header>
-        <div class="secao-topo">                                          
-            <figure>
-            <img src="assets/local-logo.png" alt="agencia de turismo">
-            </figure>
-            <p>                                                                      <!-- Criando html do cabeçalho simples com uma imagem e um texto -->
-                Agência de Viagens
-            </p>
+        <div class="secao-topo">  
+            <div class="topo-int">
+                <figure>
+                    <img src="assets/local-logo.png" alt="agencia de turismo">
+                </figure>
+                <p>                                                                      <!-- Criando html do cabeçalho simples com uma imagem e um texto -->
+                    Agência de Viagens
+                </p>
+            </div>                                        
         </div>
     </header>
     <main>
         <section>
             <div class="secao-capa">
-                <div class="secao-cadastro">                 <!--primeira section com um container fundo "image" e por dentro uma container com formulário -->
-                    <h1>Solicite um Orçamento</h1>
-                    <p>
-                        Informe seus dados
-                    </p>
-                    <div>
-                        <form action="">
-                            <div class="cadastro-up">
-                                <label for="nome_user">Nome: </label>
-                                <input id="nome_user" name="#" type="text" placeholder="Nome completo" minlength="8" maxlenght="120" required/>  <!--Primeira parte do cadastro -->
-                            </div>
-                            <div class="cadastro-up">
-                                <label for="email_user">Email: </label>
-                                <input id="email_user" name="#" type="email" placeholder="Email para contato" minlenght="8" maxlenght="120" required/>
-                            </div>
-                            <div class="cadastro-up">
-                                <label for="tel_user">Celular: </label>
-                                <input id="tel_user" name="#" type="tel" placeholder="" min="11" max="11" required>
-                            </div>
-                            <div class="cadastro-data">
-                                <div class="secao-data-left">
-                                    <label for="data_ida">Data de ida: </label>
-                                    <input id="data_ida" name="#" type="date" required>
+                <div class="capa-formulario">                 <!--primeira section com um container fundo "image" e por dentro uma container com formulário -->
+                    <div class="formulario-topo">
+                        <img src="assets/aviao.png" alt="">
+                        <p>Solicite um orçamento</p>
+                    </div>
+                    <div class="formulario-body">
+                        <div class="formulario-body-int">
+                            <h2>
+                                Informe seus dados
+                            </h2>
+                            <form action="">
+                                <div class="formulario-up">
+                                    <label for="nome_user">Nome: </label>
+                                    <input id="nome_user" name="#" type="text" placeholder=" Nome completo" minlength="8" maxlenght="120" required/>  <!--Primeira parte do formulario -->
                                 </div>
-                                <div class="cadastro-data-right">
-                                    <label for="data_volta">Data de volta: </label>
-                                    <input id="data_volta" name="#" type="date" required>
+                                <div class="formulario-up">
+                                    <label for="email_user">Email: </label>
+                                    <input id="email_user" name="#" type="email" placeholder=" Email para contato" minlenght="8" maxlenght="120" required/>
                                 </div>
-                            </div>
-                            <div class="cadastro-destino">                                 <!--Segunda parte do cadastro com 2 select um de "origem" outro de "destino"-->
-                                <div class="secao-destino-left">
-                                    <label for="origem_user">Origem: </label>
-                                    <select id="origem_user" name="#" required>
-                                        <optgroup label="partindo de ">
-                                            <option value="AC">Rio Branco, Acre, Brasil</option>
-                                            <option value="AL">Maceió, Alagoas, Brasil</option>
-                                            <option value="AP">Macapá, Amapá, Brasil</option>
-                                            <option value="AM">Manaus, Amazonas, Brasil</option>
-                                            <option value="BA">Salvador, Bahia, Brasil</option>
-                                            <option value="CE">Fortaleza, Ceará, Brasil</option>
-                                            <option value="DF">Brasília, Distrito Federal, Brasil</option>
-                                            <option value="ES">Vitória, Espírito Santo, Brasil</option>
-                                            <option value="GO">Goiânia, Goiás, Brasil</option>
-                                            <option value="MA">São Luís, Maranhão, Brasil</option>
-                                            <option value="MT">Cuiabá, Mato Grosso, Brasil</option>
-                                            <option value="MS">Campo Grande, Mato Grosso do Sul, Brasil</option>
-                                            <option value="MG">Belo Horizonte, Minas Gerais, Brasil</option>
-                                            <option value="PA">Belém, Pará, Brasil</option>
-                                            <option value="PB">João Pessoa, Paraíba, Brasil</option>
-                                            <option value="PR">Curitiba, Parana, Brasil</option>
-                                            <option value="PE">Recife, Pernambuco, Brasil</option>
-                                            <option value="PI">Teresina, Piauí, Brasil</option>
-                                            <option value="RJ">Rio de Janeiro, Rio de Janeiro, Brasil</option>
-                                            <option value="RN">Natal, Rio Grande do Norte, Brasil</option>
-                                            <option value="RS">Porto Alegre, Rio Grande do Sul, Brasil</option>
-                                            <option value="RO">Porto Velho, Rondônia, Brasil</option>
-                                            <option value="RR">Boa Vista, Roraima, Brasil</option>
-                                            <option value="S">Florianópolis, Santa Catarina, Brasil</option>
-                                            <option value="SP">São Paulo, São Paulo, Brasil</option>
-                                            <option value="SE">Aracaju, Sergipe, Brasil</option>
-                                            <option value="TO">Palmas, Tocantins, Brasil</option>
-                                        </optgroup>
-                                    </select>    
+                                <div class="formulario-up">
+                                    <label for="tel_user">Celular: </label>
+                                    <input id="tel_user" name="#" type="tel" placeholder=" (xx) xxxxx-xxxx" min="11" max="11" required>
                                 </div>
-                                <div class="cadastro-data-right">
-                                    <label for="destino_user">Destino: </label>
-                                    <select id="destino_user" name="#" required>
-                                        <optgroup label="partindo de ">
-                                            <option value="AC">Rio Branco, Acre, Brasil</option>
-                                            <option value="AL">Maceió, Alagoas, Brasil</option>
-                                            <option value="AP">Macapá, Amapá, Brasil</option>
-                                            <option value="AM">Manaus, Amazonas, Brasil</option>
-                                            <option value="BA">Salvador, Bahia, Brasil</option>
-                                            <option value="CE">Fortaleza, Ceará, Brasil</option>
-                                            <option value="DF">Brasília, Distrito Federal, Brasil</option>
-                                            <option value="ES">Vitória, Espírito Santo, Brasil</option>
-                                            <option value="GO">Goiânia, Goiás, Brasil</option>
-                                            <option value="MA">São Luís, Maranhão, Brasil</option>
-                                            <option value="MT">Cuiabá, Mato Grosso, Brasil</option>
-                                            <option value="MS">Campo Grande, Mato Grosso do Sul, Brasil</option>
-                                            <option value="MG">Belo Horizonte, Minas Gerais, Brasil</option>
-                                            <option value="PA">Belém, Pará, Brasil</option>
-                                            <option value="PB">João Pessoa, Paraíba, Brasil</option>
-                                            <option value="PR">Curitiba, Parana, Brasil</option>
-                                            <option value="PE">Recife, Pernambuco, Brasil</option>
-                                            <option value="PI">Teresina, Piauí, Brasil</option>
-                                            <option value="RJ">Rio de Janeiro, Rio de Janeiro, Brasil</option>
-                                            <option value="RN">Natal, Rio Grande do Norte, Brasil</option>
-                                            <option value="RS">Porto Alegre, Rio Grande do Sul, Brasil</option>
-                                            <option value="RO">Porto Velho, Rondônia, Brasil</option>
-                                            <option value="RR">Boa Vista, Roraima, Brasil</option>
-                                            <option value="SC">Florianópolis, Santa Catarina, Brasil</option>
-                                            <option value="SP">São Paulo, São Paulo, Brasil</option>
-                                            <option value="SE">Aracaju, Sergipe, Brasil</option>
-                                            <option value="TO">Palmas, Tocantins, Brasil</option>
-                                        </optgroup>
-                                    </select>    
+                                <div class="formulario-data">
+                                    <div class="data-left">
+                                        <label for="data_ida">Data de ida: </label>
+                                        <input id="data_ida" name="#" type="date" required>
+                                    </div>
+                                    <div class="data-right">
+                                        <label for="data_volta">Data de volta: </label>
+                                        <input id="data_volta" name="#" type="date" required>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="cadastro-crianca">                                                                   <!--Terceira parte do cadastro com -->
-                                <p>Quarto com cama infantil?</p>
-                                <div class="crianca-sim">
-                                    <input  type="radio" name="#" value="sim" id="crianca_sim" required>
-                                    <label for="crianca_sim">Sim</label>
+                                <div class="formulario-destino">                                 <!--Segunda parte do cadastro com 2 select um de "origem" outro de "destino"-->
+                                    <div class="destino-left">
+                                        <label for="origem_user">Origem: </label>
+                                        <select id="origem_user" name="#" required>
+                                            <optgroup label="partindo de ">
+                                                <option value="">Partindo de</option>
+                                                <option value="AC">Rio Branco, Acre, Brasil</option>
+                                                <option value="AL">Maceió, Alagoas, Brasil</option>
+                                                <option value="AP">Macapá, Amapá, Brasil</option>
+                                                <option value="AM">Manaus, Amazonas, Brasil</option>
+                                                <option value="BA">Salvador, Bahia, Brasil</option>
+                                                <option value="CE">Fortaleza, Ceará, Brasil</option>
+                                                <option value="DF">Brasília, Distrito Federal, Brasil</option>
+                                                <option value="ES">Vitória, Espírito Santo, Brasil</option>
+                                                <option value="GO">Goiânia, Goiás, Brasil</option>
+                                                <option value="MA">São Luís, Maranhão, Brasil</option>
+                                                <option value="MT">Cuiabá, Mato Grosso, Brasil</option>
+                                                <option value="MS">Campo Grande, Mato Grosso do Sul, Brasil</option>
+                                                <option value="MG">Belo Horizonte, Minas Gerais, Brasil</option>
+                                                <option value="PA">Belém, Pará, Brasil</option>
+                                                <option value="PB">João Pessoa, Paraíba, Brasil</option>
+                                                <option value="PR">Curitiba, Parana, Brasil</option>
+                                                <option value="PE">Recife, Pernambuco, Brasil</option>
+                                                <option value="PI">Teresina, Piauí, Brasil</option>
+                                                <option value="RJ">Rio de Janeiro, Rio de Janeiro, Brasil</option>
+                                                <option value="RN">Natal, Rio Grande do Norte, Brasil</option>
+                                                <option value="RS">Porto Alegre, Rio Grande do Sul, Brasil</option>
+                                                <option value="RO">Porto Velho, Rondônia, Brasil</option>
+                                                <option value="RR">Boa Vista, Roraima, Brasil</option>
+                                                <option value="S">Florianópolis, Santa Catarina, Brasil</option>
+                                                <option value="SP">São Paulo, São Paulo, Brasil</option>
+                                                <option value="SE">Aracaju, Sergipe, Brasil</option>
+                                                <option value="TO">Palmas, Tocantins, Brasil</option>
+                                            </optgroup>
+                                        </select>    
+                                    </div>
+                                    <div class="destino-right">
+                                        <label for="destino_user">Destino: </label>
+                                        <select id="destino_user" name="#" required>
+                                            <optgroup label="partindo de ">
+                                                <option value="">Indo para</option>
+                                                <option value="AC">Rio Branco, Acre, Brasil</option>
+                                                <option value="AL">Maceió, Alagoas, Brasil</option>
+                                                <option value="AP">Macapá, Amapá, Brasil</option>
+                                                <option value="AM">Manaus, Amazonas, Brasil</option>
+                                                <option value="BA">Salvador, Bahia, Brasil</option>
+                                                <option value="CE">Fortaleza, Ceará, Brasil</option>
+                                                <option value="DF">Brasília, Distrito Federal, Brasil</option>
+                                                <option value="ES">Vitória, Espírito Santo, Brasil</option>
+                                                <option value="GO">Goiânia, Goiás, Brasil</option>
+                                                <option value="MA">São Luís, Maranhão, Brasil</option>
+                                                <option value="MT">Cuiabá, Mato Grosso, Brasil</option>
+                                                <option value="MS">Campo Grande, Mato Grosso do Sul, Brasil</option>
+                                                <option value="MG">Belo Horizonte, Minas Gerais, Brasil</option>
+                                                <option value="PA">Belém, Pará, Brasil</option>
+                                                <option value="PB">João Pessoa, Paraíba, Brasil</option>
+                                                <option value="PR">Curitiba, Parana, Brasil</option>
+                                                <option value="PE">Recife, Pernambuco, Brasil</option>
+                                                <option value="PI">Teresina, Piauí, Brasil</option>
+                                                <option value="RJ">Rio de Janeiro, Rio de Janeiro, Brasil</option>
+                                                <option value="RN">Natal, Rio Grande do Norte, Brasil</option>
+                                                <option value="RS">Porto Alegre, Rio Grande do Sul, Brasil</option>
+                                                <option value="RO">Porto Velho, Rondônia, Brasil</option>
+                                                <option value="RR">Boa Vista, Roraima, Brasil</option>
+                                                <option value="SC">Florianópolis, Santa Catarina, Brasil</option>
+                                                <option value="SP">São Paulo, São Paulo, Brasil</option>
+                                                <option value="SE">Aracaju, Sergipe, Brasil</option>
+                                                <option value="TO">Palmas, Tocantins, Brasil</option>
+                                            </optgroup>
+                                        </select>    
+                                    </div>
                                 </div>
-                                <div class="crianca-nao">
-                                    <input  type="radio" name="#" value="sim" id="crianca_nao" required>
-                                    <label for="crianca_nao">Nâo</label>
+                                <div class="formulario-crianca">                                                                   <!--Terceira parte do formulário -->
+                                    <p>Quarto com cama infantil?</p>
+                                    <div class="crianca-opcao">
+                                        <div class="crianca-sim">
+                                            <input  type="radio" name="#" value="sim" id="crianca_sim" required>
+                                            <label for="crianca_sim">Sim</label>
+                                        </div>
+                                        <div class="crianca-nao">
+                                            <input  type="radio" name="#" value="sim" id="crianca_nao" required>
+                                            <label for="crianca_nao">Nâo</label>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="cadastro-hospedagem">
-                                <p>Prefêrencias da hospedagem</p>
-                                <div class="hospedagem-opcao">
-                                    <input  type="checkbox" name="piscina" value="piscina" id="piscina">
-                                    <label for="piscina">Piscina</label>
+                                <div class="formulario-hospedagem">
+                                    <p>Prefêrencias da hospedagem</p>
+                                    <div class="hospedagem-int">
+                                        <div class="hospedagem-opcao">
+                                            <input  type="checkbox" name="piscina" value="piscina" id="piscina">
+                                            <label for="piscina">Piscina</label>
+                                        </div>
+                                        <div class="hospedagem-opcao">
+                                            <input  type="checkbox" name="wifi" value="wifi" id="wifi">
+                                            <label for="wifi">WI-FI</label>
+                                        </div>
+                                        <div class="hospedagem-opcao">
+                                            <input  type="checkbox" name="garagem" value="garagem" id="garagem">
+                                            <label for="garagem">Garagem</label>
+                                        </div>
+                                        <div class="hospedagem-opcao">
+                                            <input  type="checkbox" name="suite" value="suite" id="suite">
+                                            <label for="suite">Suíte</label>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="hospedagem-opcao">
-                                    <input  type="checkbox" name="wifi" value="wifi" id="wifi">
-                                    <label for="wifi">WI-FI</label>
-                                </div>
-                                <div class="hospedagem-opcao">
-                                    <input  type="checkbox" name="garagem" value="garagem" id="garagem">
-                                    <label for="garagem">Garagem</label>
-                                </div>
-                                <div class="hospedagem-opcao">
-                                    <input  type="checkbox" name="suite" value="suite" id="suite">
-                                    <label for="suite">Suíte</label>
-                                </div>
-                            </div>
-                            <button type="submit">Solicite Orçamento</button>
+                            <button type="submit">Solicitar Orçamento</button>
+                        </div>    
                         </form>
                     </div>
                 </div>
@@ -158,39 +172,39 @@
         </section>
         <section>
             <div class="secao-ofertas">
-                <h2>ofertas</h2>
+                <h2>ofertas</h2>                           <!--secao 3 ofertas com 1 container na esquerda  outro, container na direita que é pai de 4 containers filhos-->
                 <h3>Com até 50% de desconto</h3>
-                <div class="">
-                    <div class="">
+                <div class="ofertas-int">
+                    <div class="ofertas-left">
                         <figure>
                             <img src="assets/rio.jpg" alt="Rio de Janeiro">
                             <figcaption>Rio de Janeiro</figcaption>
                         </figure>
                     </div>
-                    <div class="">
-                        <div class="">
-                            <div class="">
-                                <div class="">
+                    <div class="ofertas-right">
+                        <div class="ofertas-right-column">
+                            <div class="column-up">
+                                <div class="column-up-left">
                                     <figure>
                                         <img src="assets/manaus.jpg" alt="Manaus">
                                         <figcaption>Manaus</figcaption>
                                     </figure>
                                 </div>
-                                <div class="">
+                                <div class="column-up-left">
                                     <figure>
                                         <img src="assets/saopaulo.jpg" alt="Sao Paulo">
                                         <figcaption>São Paulo</figcaption>
                                     </figure>
                                 </div>
                             </div>
-                            <div class="">
-                                <div class="">
+                            <div class="column-down">
+                                <div class="column-down-up">
                                     <figure>
                                         <img src="assets/niteroi.jpg" alt="niteroi">
                                         <figcaption>Rio de Janeiro</figcaption>
                                     </figure>
                                 </div>
-                                <div class="">
+                                <div class="column-down-left">
                                     <figure>
                                         <img src="assets/maranhao.jpg" alt="Maranhao">
                                         <figcaption>Maranhão</figcaption>
@@ -202,6 +216,76 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="secao-promocao">
+                <h3>Explore a Natureza</h3>
+                <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
+                <div class="promocao-int">
+                    <div class="promocao-left">
+                        <figure>
+                            <img src="assets/lencol.jpg" alt="lencol maranhense">
+                        </figure>
+                        <p>Lençois Maranhenses,Brasil</p>
+                        <p>ida e volta a partir de R$79</p>
+                    </div>
+                    <div class="promocao-right">
+                        <figure>
+                            <img src="assets/goias.jpg" alt="Goias">
+                        </figure>
+                        <p>Cachoeira Santa Bárbara, Brasil</p>
+                        <p>ida e volta a por  R$139</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="secao-rodape">                   <!--Estrutura do rodapé  com 1 container pai outro container filho que tem 2 containers filhos uma a direita e outra a esquerda-->
+            <div class="rodape-int">
+                <div class="rodape-left">
+                    <p>contato</p>
+                    <div class="rodape-left-int">
+                        <figure>
+                            <img src="assets/local.png" alt="local">
+                        </figure>
+                        <p>Rio de Janeiro, RJ</p>
+                    </div>
+                    <div class="rodape-left-int">
+                        <figure>
+                            <img src="assets/telefone.png" alt="telefone">
+                        </figure>
+                        <p>Telefone:(21) 99999-9999</p>
+                    </div>
+                    <div class="rodape-left-int">
+                        <figure>
+                            <img src="assets/email.png" alt="email">
+                        </figure>
+                        <p>Email: contato@agencia.com.br</p>
+                    </div>
+                </div>
+                <div class="rodape-right">
+                    <p>Nossas Redes Sociais</p>
+                    <div class="rodape-right-int">
+                        <figure>
+                            <img src="assets/fb.png" alt="local">
+                        </figure>
+                        <p>/AgenciadeViagem</p>
+                    </div>
+                    <div class="rodape-right-int">
+                        <figure>
+                            <img src="assets/ig.png" alt="instagram">
+                        </figure>
+                        <p>@AgenciadeViagem</p>
+                    </div>
+                    <div class="rodape-right-int">
+                        <figure>
+                            <img src="assets/tt.png" alt="twitter">
+                        </figure>
+                        <p>@AgenciadeViagem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
