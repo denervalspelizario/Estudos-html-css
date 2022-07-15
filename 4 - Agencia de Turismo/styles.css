@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*Estilizando o topo da pagina*/
+header .secao-topo {
+    background-color: #fff;   
+}
+.secao-topo .topo-int {
+    margin: 0 auto;                                   
+    width: 1024px;
+    display: flex;           /*Topo contêm uma 1 container pai e 1 filho para dar espaço de 1024px padrao*/
+    padding: 10px 0;
+}
+.topo-int img {
+    width: 35px;  
+}
+.topo-int p {
+    color: #5d14d5;
+    font-size: 25px;
+    padding-left: 10px;
+}
+/*Estilização da primeira section*/
+.secao-capa {
+    background-image: url(assets/bahia.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;                           /*Container pai com uma imagem de fundo, container filho com o formlário*/
+}
+.secao-capa .capa-formulario {
+    margin: 0 auto;                                   
+    width: 1024px;                         
+    padding: 40px 0;
+}
+.capa-formulario .formulario-topo {
+    display: flex;
+    background-color: #5d14d5;
+    padding: 7px 0;                                                             
+}                                              /*Estilizando o topo do formulario*/
+.formulario-topo img {
+    width: 20px;
+    transform: rotate(-40deg);
+    margin-left: 375px;
+}
+.formulario-topo p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.formulario-body {
+    background-color: #fff;
+}
+.formulario-body .formulario-body-int {
+    margin: 0 auto;
+    width: 95%;
+    padding: 20px 0;                        /*Estilizando 3 primeiro inputs do formulário*/
+}
+.formulario-body-int h2 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.formulario-body-int .formulario-up label {
+    display: flex;
+    padding-bottom: 10px;
+}
+.formulario-body-int .formulario-up input {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    width: 100%;
+}
+.formulario-data {
+    display: flex;
+}
+.formulario-data .data-left{
+    width: 50%;
+    padding-bottom: 10px;
+}
+.formulario-data .data-left label{
+    display: block;
+    padding-bottom: 10px;
+}
+.formulario-data .data-left input {
+    padding: 5px 0;
+    width: 100%;
+}
+.formulario-data .data-right {                  /*Segunda parte do formulario com inputs lad a lado*/
+    padding: 0 0 10px 20px;
+    width: 50%;
+}
+.formulario-data .data-right label{
+    display: block;
+    padding-bottom: 10px;
+}
+.formulario-data .data-right input {
+    padding: 5px 0;
+    width: 100%;
+}
+.formulario-destino {
+    display: flex;
+}
+.formulario-destino .destino-left {
+    width: 49.5%;
+    padding-bottom: 10px;
+}
+.formulario-destino .destino-left label {
+    display: block;                          
+    padding-bottom: 10px;
+}
+.formulario-destino .destino-left select {
+    padding: 5px 0;                              /*Estlizando os 2 selects do formulário*/
+    width: 100%;
+    background-color: #fff;
+    border:  1px solid rgb(129, 127, 127);
+    border-radius: 2px;
+}
+.formulario-destino .destino-right {
+    width: 49.5%;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+.formulario-destino .destino-right label {
+    display: block;                          
+    padding-bottom: 10px;
+}
+.formulario-destino .destino-right select {
+    padding: 5px 0;
+    width: 100%;
+    background-color: #fff;
+    border:  1px solid rgb(129, 127, 127);
+    border-radius: 2px;
+}
+.formulario-crianca p {
+    padding-bottom: 10px;
+}
+.formulario-crianca .crianca-opcao {             
+    display: flex;                           /*Estilização da uma checkbox e uma radio*/
+}
+.crianca-opcao .crianca-nao {
+    margin-left: 70px;
+}
+.formulario-hospedagem p{
+    padding: 10px 0;
+}
+.formulario-hospedagem .hospedagem-int {
+    display: flex;
+}
+.hospedagem-int .hospedagem-opcao {
+    padding-right: 40px;
+}
+button {
+    background-color: #5d14d5;
+    border: 1px solid #5d14d5;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+
