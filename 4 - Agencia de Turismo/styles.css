@@ -326,7 +326,7 @@ button {
 }
 /*Iniciando a responsividade a diferentes telas atraves dos @medias querys, resoluçoes ajustadas - 425px - 768px - 1024px - Acima de 1024px*/
 
-@media (min-width: 425px) and (max-width: 767px){    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com as dimensão 425px*/    
+@media (max-width: 425px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com as dimensão 425px*/    
     .secao-topo .topo-int {
         margin: 0 auto;                                   
         width: 90%;
