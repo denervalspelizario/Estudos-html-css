@@ -40,7 +40,7 @@ header .secao-topo {
 .formulario-topo img {
     width: 20px;
     transform: rotate(-40deg);
-    margin-left: 375px;
+    margin-left: 38%;
 }
 .formulario-topo p {
     color: #fff;
@@ -156,5 +156,302 @@ button {
     color: #fff;
     margin-top: 40px;
 }
+/*Estilização da segunda section*/
+.fundo-ofer-promo {
+    background-color: #eaeaea;
+}
+.secao-ofertas{
+    margin: 0 auto;
+    width: 1024px;
+    background-color: #eaeaea;
+}
+.secao-ofertas h2 {
+
+    padding: 30px 0 10px 0;
+    font-size: 20px;
+}
+.secao-ofertas p {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.secao-ofertas span {
+    font-weight: bold;
+}
+.secao-ofertas .ofertas-int {                  /*Ajustando container com 5 elementos filhos, 1 maior á esquerda e 4 menores a direita */
+    display: flex;
+    flex-wrap: wrap;
+}
+.ofertas-int .ofertas-left img{
+    width: 500px;
+}
+.ofertas-int .ofertas-left figcaption {
+    background-color: rgba(000, 000, 000, 0.6);
+    color: #fff;                                   /*Figcaption ajustada para dentro da img*/
+    padding: 5px 10px;
+    position: relative;
+    bottom: 30px;
+}
+.ofertas-int .ofertas-right .column-up{
+    display: flex;
+}
+.column-up .column-up-first img {
+    width: 240px;
+    height: 175px;
+    padding-left: 20px;
+}
+.column-up .column-up-first figcaption {
+    background-color: rgba(000, 000, 000, 0.6);
+    color: #fff;                                     /*Figcaption ajustada para dentro da img*/
+    padding: 5px 10px;
+    position: relative;
+    bottom: 30px;
+    margin-left: 20px;
+}
+.ofertas-int .ofertas-right .column-down{
+    display: flex;
+}
+.column-down .column-down-last img {
+    width: 240px;
+    height: 170px;
+    padding-left: 20px;
+}
+.column-down .column-down-last figcaption {
+    background-color: rgba(000, 000, 000, 0.6);
+    color: #fff;                                     /*Figcaption ajustada para dentro da img*/
+    padding: 5px 10px;
+    position: relative;
+    bottom: 32px;
+    margin-left: 20px;
+}
+/*Estilização da terceira section*/
+.secao-promocao {
+    margin: 0 auto;
+    width: 1024px;
+}
+.secao-promocao h3 {
+    padding-bottom: 10px;               
+    font-size: 20px;
+}
+.secao-promocao p {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.secao-promocao .promocao-int{
+    display: flex;  
+    flex-flow: wrap;                                      /*2 containers lado a lado cada um com 2 textos embaixo*/
+}
+.promocao-int .promocao-left img {
+    width: 500px;
+}
+.promocao-left .promocao-down {
+    width: 470px;
+    background-color: #fff;
+    padding: 15px 15px; 
+}
+.promocao-left .promocao-down p {
+    font-weight: bold;
+    font-size: 15px;    
+}
+.promocao-left .promocao-down span {
+    color: rgb(151, 151, 151);
+    font-weight: 100;
+    font-size: 12px;
+}
+.promocao-int .promocao-right  {
+    margin-left: 20px;
+}
+.promocao-int .promocao-right img {
+    width: 500px;
+}
+.promocao-right .promocao-down {
+    width: 470px;
+    background-color: #fff;
+    padding: 15px 15px; 
+    margin-bottom: 30px;
+}
+.promocao-right .promocao-down p {
+    font-weight: bold;
+    font-size: 15px;    
+}
+.promocao-right .promocao-down span {
+    color: rgb(151, 151, 151);
+    font-weight: 100;
+    font-size: 12px;
+}
+/*Estilização do footer*/
+.secao-rodape {
+    background-color: #5d14d5;
+}
+.secao-rodape .rodape-int {
+    margin: 0 auto;                 /*centralizando a footer em 1024px, colocando cada elementos filho nos extremos*/
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+.rodape-int .rodape-left-int{
+    display: flex;
+    padding-bottom: 10px;
+}
+.rodape-int .rodape-left p {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+.rodape-left .rodape-left-int img {          /*Container em cada extremo com 1 p e 3 container filhos cada*/
+    width: 20px;
+}
+.rodape-left .rodape-left-int p {
+    font-size: 15px;
+    padding: 0 0 5px 5px;
+    font-weight: 100;
+}
+.rodape-int .rodape-right-int{
+    display: flex;
+    padding-bottom: 10px;
+}
+.rodape-int .rodape-right p {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+.rodape-right .rodape-right-int img {
+    width: 20px;
+}
+.rodape-right .rodape-right-int p {
+    font-size: 15px;
+    padding: 0 0 5px 5px;
+    font-weight: 100;
+}
+/*Iniciando a responsividade a diferentes telas atraves dos @medias querys, resoluçoes ajustadas - 425px - 768px - 1024px - Acima de 1024px*/
+
+@media (min-width: 425px) and (max-width: 767px){    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com as dimensão 425px*/    
+    .secao-topo .topo-int {
+        margin: 0 auto;                                   
+        width: 90%;
+        display: flex;           
+        padding: 10px 0;
+    }
+    .secao-capa .capa-formulario {
+        margin: 0 auto;                                   
+        width: 90%;                         
+        padding: 40px 0;
+    }
+    .formulario-topo img {
+        width: 20px;
+        transform: rotate(-40deg);  
+        margin-left: 25%; 
+    }
+    .secao-ofertas{
+        margin: 0 auto;
+        width: 90%;
+        background-color: #eaeaea;
+        flex-wrap: wrap;
+    }
+    .ofertas-int .ofertas-left img{
+        width: 390px;
+        height: 200px;    
+    }
+    .ofertas-int .ofertas-left figcaption {
+        background-color: rgba(000, 000, 000, 0.6);
+        color: #fff;                                   /*Figcaption ajustada para dentro da img*/
+        padding: 5px 10px;
+        position: relative;
+        bottom: 32px;
+    }
+    .ofertas-int .ofertas-right .column-up{
+        display: flex;
+        
+    }
+    .column-up .column-up-first img {
+        width: 182px;
+        height: 120px;
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    .column-up .column-up-first figcaption {
+        background-color: rgba(000, 000, 000, 0.6);
+        color: #fff;                                     /*Figcaption ajustada para dentro da img*/
+        padding: 5px 10px;
+        position: relative;
+        right: 20px;
+        bottom: 30px;
+        margin-left: 20px;
+    }
+    .ofertas-int .ofertas-right .column-down{
+        display: flex;
+    }
+    .column-down .column-down-last img {
+        width: 182px;
+        height: 120px;
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+    .column-down .column-down-last figcaption {
+        background-color: rgba(000, 000, 000, 0.6);
+        color: #fff;                                     /*Figcaption ajustada para dentro da img*/
+        padding: 5px 10px;
+        position: relative;
+        right: 20px;
+        bottom: 32px;
+        margin-left: 20px;
+    }
+    .secao-promocao {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .promocao-int .promocao-left img {
+        width: 390px;
+    }
+    .promocao-left .promocao-down {
+        width: 360px;
+        background-color: #fff;
+        padding: 15px 15px; 
+        margin-bottom: 20px;
+    }
+    .promocao-int .promocao-right  {
+        margin-left: 0px;
+    }
+    .promocao-int .promocao-right img {
+        width: 390px;
+    }
+    .promocao-right .promocao-down {
+        width: 360px;
+        background-color: #fff;
+        padding: 15px 15px; 
+        margin-bottom: 30px;
+    }
+    .secao-rodape .rodape-int {
+        margin: 0 auto;                 
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rodape-int .rodape-left p {
+        color: #fff;
+        font-size: 16px;
+        padding: 20px 0;
+        font-weight: bold;
+    }
+    .rodape-left .rodape-left-int p {
+        font-size: 10px;
+        padding: 0 0 5px 5px;
+        font-weight: 100;
+    }
+    .rodape-int .rodape-right p {
+        color: #fff;
+        font-size: 16px;
+        padding: 20px 0;
+        font-weight: bold;
+    }
+    .rodape-right .rodape-right-int p {
+        font-size: 10px;
+        padding: 0 0 5px 5px;
+        font-weight: 100;
+    }
+    
+}
+
 
 

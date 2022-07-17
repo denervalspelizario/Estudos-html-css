@@ -225,7 +225,7 @@ footer .secao-footer .secao-footer-paragrafo p {
     .secao-espec .secao-espec1 {
         width: 80%;
     }
-    }
+    };
 
 
 @media only screen and (max-width: 768px) {    /* Usando as @mediaquerys e deixando o site mais responsivo de acordo com a dimensão até 768px*/   
